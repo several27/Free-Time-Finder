@@ -173,6 +173,8 @@ public class Main
 			attributes.put("labels", labels.toString());
 			attributes.put("data", data.toString());
 
+			attributes.put("activeMenu", "");
+
 			return new ModelAndView(attributes, "findFreeTime.ftl");
 		}, new FreeMarkerEngine());
 
