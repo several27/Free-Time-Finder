@@ -191,20 +191,24 @@ public class Main
 
 			StringBuilder labels = new StringBuilder();
 			StringBuilder data = new StringBuilder();
-			for (Map.Entry<Long, Integer> event : eventsForDay.entrySet())
+			try
 			{
-				Date eventDate = new Date(event.getKey());
-				labels.append("\"");
-				if (eventDate.getHours() < 10) labels.append("0");
-				labels.append(eventDate.getHours());
-				labels.append(":");
-				labels.append(eventDate.getMinutes());
-				labels.append("\"");
-				labels.append(",");
+				Set<Map.Entry<Long, Integer>> entrySet = eventsForDay.entrySet();
+				for (Map.Entry<Long, Integer> event : entrySet)
+				{
+					Date eventDate = new Date(event.getKey());
+					labels.append("\"");
+					if (eventDate.getHours() < 10) labels.append("0");
+					labels.append(eventDate.getHours());
+					labels.append(":");
+					labels.append(eventDate.getMinutes());
+					labels.append("\"");
+					labels.append(",");
 
-				data.append(event.getValue());
-				data.append(", ");
-			}
+					data.append(event.getValue());
+					data.append(", ");
+				}
+			} catch (Exception e) {}
 
 			attributes.put("labels", labels.toString());
 			attributes.put("data", data.toString());
