@@ -1,3 +1,4 @@
+import java.security.MessageDigest;
 import java.sql.*;
 import java.util.HashMap;
 import java.util.ArrayList;
@@ -69,7 +70,7 @@ public class Main
 
 		post("/login", (request, response) -> {
 			String email = request.queryMap().get("email").value();
-			String password = request.queryMap().get("password").value();
+			String password = hashSha256(request.queryMap().get("password").value());
 
 			Map<String, Object> attributes = new HashMap<>();
 			Connection connection = null;
@@ -123,6 +124,27 @@ public class Main
 //			return new ModelAndView(attributes, "index.ftl");
 //		}, new FreeMarkerEngine());
 
+	}
+
+	private static String hashSha256(String toHash)
+	{
+		try
+		{
+			MessageDigest md = MessageDigest.getInstance("SHA-256");
+			md.update(toHash.getBytes());
+
+			byte byteData[] = md.digest();
+
+			StringBuffer sb = new StringBuffer();
+			for (int i = 0; i < byteData.length; i++) {
+				sb.append(Integer.toString((byteData[i] & 0xff) + 0x100, 16).substring(1));
+			}
+
+			return sb.toString();
+		}
+		catch (Exception e) { }
+
+		return "";
 	}
 
 }
