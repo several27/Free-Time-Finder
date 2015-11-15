@@ -141,7 +141,6 @@ public class Main
 
 		get("/findFreeTime", (request, response) -> {
 			Map<String, Object> attributes = new HashMap<>();
-			attributes.put("message", "Hello World!");
 
 			User user = request.session().attribute("User");
 			if (user == null)
@@ -151,7 +150,7 @@ public class Main
 			}
 			attributes.put("userName", user.getName());
 
-			return new ModelAndView(attributes, "findFreeTime.flt");
+			return new ModelAndView(attributes, "findFreeTime.ftl");
 		}, new FreeMarkerEngine());
 
 //		get("/signup", (request, response) -> {
