@@ -25,12 +25,12 @@
                 new Chartist.Line('#chart', {
                             labels: [${labels}],
                             series: [{
-                                name: 'series-1',
+                                name: 'events',
                                 data: [${data}]
                             }]
                         },
                         {
-                            'series-1': {lineSmooth: Chartist.Interpolation.simple()}
+                            events: {lineSmooth: Chartist.Interpolation.step()}
                         });
 
                 jQuery('.pickadate').pickadate({
