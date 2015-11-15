@@ -201,6 +201,7 @@ public class Main
 					labels.append(eventDate.getHours());
 					labels.append(":");
 					labels.append(eventDate.getMinutes());
+					if (eventDate.getMinutes() == 0) labels.append("0");
 					labels.append("\"");
 					labels.append(",");
 

@@ -32,7 +32,13 @@
 		                {
                             series: {
                                 events: {lineSmooth: Chartist.Interpolation.step()}
-                            }
+                            },
+			                axisY: {
+                                labelInterpolationFnc: function (value)
+                                {
+                                    return Math.floor(value);
+                                }
+			                }
 		                });
 
                 jQuery('.pickadate').pickadate({
