@@ -41,7 +41,7 @@ public class Days {
 				additionalArray.putAll(daySubTree);
 
 				dayARRAY.add(additionalArray);
-					System.out.println("Events today: " + daySubTree.size());
+//					System.out.println("Events today: " + daySubTree.size());
 					daySubTree.clear();
 				
 			}
