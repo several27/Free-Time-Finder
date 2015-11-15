@@ -45,7 +45,7 @@
                 </#if>
 
 				<#if userName??>
-					<#include "calendar.ftl">
+					You're logged in as ${userName}. <a href="/findFreeTime">Find</a> free slot for your society
 				<#else>
 					<#include "login.ftl">
 				</#if>

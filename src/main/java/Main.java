@@ -138,6 +138,22 @@ public class Main
 			}
 		}, new FreeMarkerEngine());
 
+
+		get("/findFreeTime", (request, response) -> {
+			Map<String, Object> attributes = new HashMap<>();
+			attributes.put("message", "Hello World!");
+
+			User user = request.session().attribute("User");
+			if (user == null)
+			{
+				response.redirect("/");
+				return new ModelAndView(attributes, "error.ftl");
+			}
+			attributes.put("userName", user.getName());
+
+			return new ModelAndView(attributes, "findFreeTime.flt");
+		}, new FreeMarkerEngine());
+
 //		get("/signup", (request, response) -> {
 //			Map<String, Object> attributes = new HashMap<>();
 //			attributes.put("message", "Hello World!");

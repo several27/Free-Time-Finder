@@ -4,6 +4,9 @@
             <li class="active">
                 <a href="/"><span class="glyphicon glyphicon-home"></span> Home</a>
             </li>
+            <li>
+                <a href="/findFreeTime"><span class="glyphicon glyphicon-search"></span> Find Free Time</a>
+            </li>
             <#--<li>-->
                 <#--<a href="https://devcenter.heroku.com/articles/how-heroku-works"><span-->
                         <#--class="glyphicon glyphicon-user"></span> How Heroku Works</a>-->
