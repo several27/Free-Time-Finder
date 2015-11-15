@@ -20,10 +20,10 @@
         <p></p>
 
         <a type="button" class="btn btn-lg btn-default" href="/login">
-	        <span class="glyphicon glyphicon-flash"></span> Login
+	        <span class="glyphicon"></span> Login
         </a>
         <a type="button" class="btn btn-lg btn-primary" href="/singup">
-	        <span class="glyphicon glyphicon-download"></span> Signup
+	        <span class="glyphicon glyphicon-user"></span> Signup
         </a>
     </div>
 </div>
