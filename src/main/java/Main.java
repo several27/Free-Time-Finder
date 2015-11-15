@@ -157,14 +157,14 @@ public class Main
 
 			QueryParamsMap date = request.queryMap().get("date");
 			QueryParamsMap dateSubmit = request.queryMap().get("date_submit");
-			String dateS = "", dateSubmitS = "";
+			String dateS, dateSubmitS;
 
-			try
+			if (date.hasValue() && dateSubmit.hasValue())
 			{
 				dateS = date.value();
 				dateSubmitS = dateSubmit.value();
 			}
-			catch (Exception e)
+			else
 			{
 				LocalDateTime now = LocalDateTime.now();
 				dateS = now.format(DateTimeFormatter.ofPattern("yyyy/MM/DD"));
@@ -192,8 +192,8 @@ public class Main
 			attributes.put("labels", labels.toString());
 			attributes.put("data", data.toString());
 
-			attributes.put("date",  "  asd as" );
-			attributes.put("dateSubmit", "asdsad");
+			attributes.put("date",  dateS);
+			attributes.put("dateSubmit", dateSubmitS);
 
 			attributes.put("activeMenu", "");
 
