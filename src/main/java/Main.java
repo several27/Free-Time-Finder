@@ -87,9 +87,9 @@ public class Main
 				                   "password text);");
 
 
-				stmt.executeUpdate("INSERT INTO " +
-				                   "societies (name, email, password) " +
-				                   "VALUES ('Some society', 'several27@icloud.com', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8')");
+//				stmt.executeUpdate("INSERT INTO " +
+//				                   "societies (name, email, password) " +
+//				                   "VALUES ('Some society', 'several27@icloud.com', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8')");
 
 				PreparedStatement pS = connection.prepareStatement("SELECT ID, name, email " +
 				                                                   "FROM societies " +
