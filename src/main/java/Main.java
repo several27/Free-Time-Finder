@@ -172,7 +172,7 @@ public class Main
 
 			dateD = new Date(
 					Integer.parseInt(dateSubmitS.substring(0, 4)),
-					Integer.parseInt(dateSubmitS.substring(5, 7)),
+					Integer.parseInt(dateSubmitS.substring(5, 7)) - 1,
 					Integer.parseInt(dateSubmitS.substring(8, 10))
 			);
 
