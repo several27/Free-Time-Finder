@@ -44,7 +44,7 @@
                     </div>
                 </#if>
 
-				<#if userEmail??>
+				<#if userName??>
 
 				<#else>
 	                <form class="form-horizontal" role="form" method="post" action="login">
