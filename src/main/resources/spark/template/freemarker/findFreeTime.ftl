@@ -29,9 +29,11 @@
                                 data: [${data}]
                             }]
                         },
-                        {
-                            events: {lineSmooth: Chartist.Interpolation.step()}
-                        });
+		                {
+                            series: {
+                                events: {lineSmooth: Chartist.Interpolation.step()}
+                            }
+		                });
 
                 jQuery('.pickadate').pickadate({
                     formatSubmit: 'yyyy/mm/dd'
