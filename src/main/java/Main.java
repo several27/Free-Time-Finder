@@ -152,20 +152,26 @@ public class Main
 			}
 			attributes.put("userName", user.getName());
 
-			String[] labels = new String[24];
+			StringBuilder labels = new StringBuilder();
 			for (int i = 0; i < 24; i++)
 			{
-				labels[i] = (i < 10 ? "0" + i : i) + ":00";
+				labels.append("\"");
+				if (i < 10) labels.append("0");
+				labels.append(i);
+				labels.append(":00");
+				labels.append("\"");
+				labels.append(",");
 			}
 
-			String[] data = new String[24];
+			StringBuilder data = new StringBuilder();
 			for (int i = 0; i < 24; i++)
 			{
-				labels[i] = Integer.toString(i);
+				data.append(i);
+				data.append(", ");
 			}
 
-			attributes.put("labels", "\"" + String.join("\", \"", labels) + "\"");
-			attributes.put("data", String.join(", ", data));
+			attributes.put("labels", labels.toString());
+			attributes.put("data", data.toString());
 
 			return new ModelAndView(attributes, "findFreeTime.ftl");
 		}, new FreeMarkerEngine());

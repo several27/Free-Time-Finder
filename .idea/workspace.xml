@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ed76ce74-ce15-4451-96e2-85362c1181c4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Main.java" afterPath="$PROJECT_DIR$/src/main/java/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spark/template/freemarker/findFreeTime.ftl" afterPath="$PROJECT_DIR$/src/main/resources/spark/template/freemarker/findFreeTime.ftl" />
     </list>
     <ignored path="helloworld.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,19 +68,19 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.72307694">
-              <caret line="163" column="48" selection-start-line="163" selection-start-column="48" selection-end-line="163" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.74615383">
+              <caret line="171" column="0" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1441#1449#0" expanded="true" />
-                <marker date="1447594184000" expanded="true" signature="1219:1268" placeholder="CREATE TABLE..IF..." />
-                <marker date="1447594184000" expanded="true" signature="1296:1328" placeholder="INSERT INTO ticks..." />
-                <marker date="1447594184000" expanded="true" signature="1370:1392" placeholder="SELECT tick ..ticks..." />
-                <marker date="1447594184000" expanded="true" signature="2350:2388" placeholder="CREATE TABLE..IF..." />
-                <marker date="1447594184000" expanded="true" signature="2350:2584" placeholder="CREATE TABLE..IF..." />
-                <marker date="1447594184000" expanded="true" signature="2350:2585" placeholder="CREATE TABLE..IF..." />
-                <marker date="1447594184000" expanded="true" signature="2617:2838" placeholder="INSERT INTO societies..." />
-                <marker date="1447594184000" expanded="true" signature="2899:3089" placeholder="SELECT ID, n..societies..." />
+                <marker date="1447594428000" expanded="true" signature="1219:1268" placeholder="CREATE TABLE..IF..." />
+                <marker date="1447594428000" expanded="true" signature="1296:1328" placeholder="INSERT INTO ticks..." />
+                <marker date="1447594428000" expanded="true" signature="1370:1392" placeholder="SELECT tick ..ticks..." />
+                <marker date="1447594428000" expanded="true" signature="2350:2388" placeholder="CREATE TABLE..IF..." />
+                <marker date="1447594428000" expanded="true" signature="2350:2584" placeholder="CREATE TABLE..IF..." />
+                <marker date="1447594428000" expanded="true" signature="2350:2585" placeholder="CREATE TABLE..IF..." />
+                <marker date="1447594428000" expanded="true" signature="2617:2838" placeholder="INSERT INTO societies..." />
+                <marker date="1447594428000" expanded="true" signature="2899:3089" placeholder="SELECT ID, n..societies..." />
               </folding>
             </state>
           </provider>
@@ -790,7 +789,7 @@
       <created>1447582837088</created>
       <option name="number" value="Default" />
       <updated>1447582837088</updated>
-      <workItem from="1447582838631" duration="9580000" />
+      <workItem from="1447582838631" duration="9820000" />
     </task>
     <task id="LOCAL-00001" summary="First change">
       <created>1447584200085</created>
@@ -802,7 +801,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9580000" />
+    <option name="totallyTimeSpent" value="9820000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1391" height="877" extended-state="6" />
@@ -1005,14 +1004,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spark/template/freemarker/findFreeTime.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.333333">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/spark/template/freemarker/login.ftl">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-16.666666">
@@ -1021,21 +1012,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spark/template/freemarker/findFreeTime.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.333333">
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72307694">
-          <caret line="163" column="48" selection-start-line="163" selection-start-column="48" selection-end-line="163" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.74615383">
+          <caret line="171" column="0" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1441#1449#0" expanded="true" />
-            <marker date="1447594184000" expanded="true" signature="1219:1268" placeholder="CREATE TABLE..IF..." />
-            <marker date="1447594184000" expanded="true" signature="1296:1328" placeholder="INSERT INTO ticks..." />
-            <marker date="1447594184000" expanded="true" signature="1370:1392" placeholder="SELECT tick ..ticks..." />
-            <marker date="1447594184000" expanded="true" signature="2350:2388" placeholder="CREATE TABLE..IF..." />
-            <marker date="1447594184000" expanded="true" signature="2350:2584" placeholder="CREATE TABLE..IF..." />
-            <marker date="1447594184000" expanded="true" signature="2350:2585" placeholder="CREATE TABLE..IF..." />
-            <marker date="1447594184000" expanded="true" signature="2617:2838" placeholder="INSERT INTO societies..." />
-            <marker date="1447594184000" expanded="true" signature="2899:3089" placeholder="SELECT ID, n..societies..." />
+            <marker date="1447594428000" expanded="true" signature="1219:1268" placeholder="CREATE TABLE..IF..." />
+            <marker date="1447594428000" expanded="true" signature="1296:1328" placeholder="INSERT INTO ticks..." />
+            <marker date="1447594428000" expanded="true" signature="1370:1392" placeholder="SELECT tick ..ticks..." />
+            <marker date="1447594428000" expanded="true" signature="2350:2388" placeholder="CREATE TABLE..IF..." />
+            <marker date="1447594428000" expanded="true" signature="2350:2584" placeholder="CREATE TABLE..IF..." />
+            <marker date="1447594428000" expanded="true" signature="2350:2585" placeholder="CREATE TABLE..IF..." />
+            <marker date="1447594428000" expanded="true" signature="2617:2838" placeholder="INSERT INTO societies..." />
+            <marker date="1447594428000" expanded="true" signature="2899:3089" placeholder="SELECT ID, n..societies..." />
           </folding>
         </state>
       </provider>
