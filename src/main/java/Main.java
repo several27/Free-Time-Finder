@@ -234,14 +234,13 @@ public class Main
 	{
 		for (TreeMap<Long, Integer> eventsForSingleDay : events)
 		{
-			for (Map.Entry<Long, Integer> event : eventsForSingleDay.entrySet())
+			Map.Entry<Long, Integer> event = eventsForSingleDay.firstEntry();
+
+			Date eventDate = new Date(event.getKey());
+			System.out.println(date.toString() + " -- " + eventDate.toString());
+			if (eventDate.getYear() == date.getYear() && eventDate.getMonth() == date.getMonth() && eventDate.getDate() == date.getDate())
 			{
-				Date eventDate = new Date(event.getKey());
-				System.out.println(date.toString() + " -- " + eventDate.toString());
-				if (eventDate.getYear() == date.getYear() && eventDate.getMonth() == date.getMonth() && eventDate.getDate() == date.getDate())
-				{
-					return eventsForSingleDay;
-				}
+				return eventsForSingleDay;
 			}
 		}
 
