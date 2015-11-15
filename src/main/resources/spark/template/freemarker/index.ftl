@@ -31,6 +31,13 @@
 		<div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
+
+                <#if message??>
+	                <div class="alert alert-danger text-center" role="alert">
+	                    ${message}
+	                </div>
+                </#if>
+
                 <form class="form-horizontal" role="form" method="post" action="login">
                     <div class="form-group">
                         <label class="control-label col-sm-2" for="email">Email:</label>
@@ -61,11 +68,6 @@
             <div class="col-md-3"></div>
 		</div>
 
-	    <#--<div class="alert alert-info text-center" role="alert">-->
-	        <#--To deploy your own copy, and learn the fundamentals of the Heroku platform, head over to the <a-->
-	            <#--href="https://devcenter.heroku.com/articles/getting-started-with-java" class="alert-link">Getting Started-->
-	        <#--with Java on Heroku</a> tutorial.-->
-	    <#--</div>-->
 	    <hr>
 	    <#--<div class="row">-->
 	        <#--<div class="col-md-6">-->

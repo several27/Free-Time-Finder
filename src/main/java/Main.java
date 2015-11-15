@@ -9,6 +9,7 @@ import java.net.URISyntaxException;
 
 import static spark.Spark.*;
 
+import spark.Session;
 import spark.template.freemarker.FreeMarkerEngine;
 import spark.ModelAndView;
 
@@ -99,14 +100,22 @@ public class Main
 
 				ResultSet rs = pS.executeQuery();
 
-				ArrayList<String> output = new ArrayList<>();
+				User user = null;
 				while (rs.next())
 				{
-					output.add("Read from DB: " + rs.getInt("ID") + " " + rs.getString("email"));
+					user = new User(rs.getInt("ID"), rs.getString("email"), rs.getString("name"));
 				}
 
-				attributes.put("results", output);
-				return new ModelAndView(attributes, "db.ftl");
+				if (user != null)
+				{
+					request.session().attribute("User", user);
+				}
+				else
+				{
+					attributes.put("message", "Wrong email or password");
+				}
+
+				return new ModelAndView(attributes, "index.ftl");
 			} catch (Exception e)
 			{
 				attributes.put("message", "There was an error: " + e);
