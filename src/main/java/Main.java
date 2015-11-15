@@ -3,13 +3,11 @@ import java.sql.*;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.HashMap;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Map;
+import java.util.*;
 
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.Date;
 
 import static spark.Spark.*;
 
@@ -158,7 +156,8 @@ public class Main
 
 			QueryParamsMap date = request.queryMap().get("date");
 			QueryParamsMap dateSubmit = request.queryMap().get("date_submit");
-			String dateS, dateSubmitS;
+			String         dateS, dateSubmitS;
+			Date           dateD;
 
 			if (date.hasValue() && dateSubmit.hasValue())
 			{
@@ -171,21 +170,35 @@ public class Main
 				dateSubmitS = new SimpleDateFormat("MMMM dd, yyyy").format(new java.util.Date());
 			}
 
-			StringBuilder labels = new StringBuilder();
-			for (int i = 0; i < 24; i++)
+			dateD = new Date(
+					Integer.parseInt(dateS.substring(0, 4)),
+					Integer.parseInt(dateS.substring(5, 7)),
+					Integer.parseInt(dateS.substring(8, 10))
+			);
+
+			ArrayList<TreeMap<Long, Integer>> events = null;
+			try
 			{
+				DataParser.Main main = new DataParser.Main();
+				events = main.start();
+			} catch(Exception e) {}
+
+			TreeMap<Long, Integer> eventsForDay = getEventsByDate(events, dateD);
+
+			StringBuilder labels = new StringBuilder();
+			StringBuilder data = new StringBuilder();
+			for (Map.Entry<Long, Integer> event : eventsForDay.entrySet())
+			{
+				Date eventDate = new Date(event.getKey());
 				labels.append("\"");
-				if (i < 10) labels.append("0");
-				labels.append(i);
-				labels.append(":00");
+				if (eventDate.getHours() < 10) labels.append("0");
+				labels.append(eventDate.getHours());
+				labels.append(":");
+				labels.append(eventDate.getMinutes());
 				labels.append("\"");
 				labels.append(",");
-			}
 
-			StringBuilder data = new StringBuilder();
-			for (int i = 0; i < 24; i++)
-			{
-				data.append(i);
+				data.append(event.getValue());
 				data.append(", ");
 			}
 
@@ -207,6 +220,23 @@ public class Main
 //			return new ModelAndView(attributes, "index.ftl");
 //		}, new FreeMarkerEngine());
 
+	}
+
+	private static TreeMap<Long, Integer> getEventsByDate(ArrayList<TreeMap<Long, Integer>> events, Date date)
+	{
+		for (TreeMap<Long, Integer> eventsForSingleDay : events)
+		{
+			for (Map.Entry<Long, Integer> event : eventsForSingleDay.entrySet())
+			{
+				Date eventDate = new Date(event.getKey());
+				if (eventDate.getYear() == date.getYear() && eventDate.getMonth() == date.getMonth() && eventDate.getDate() == date.getDate())
+				{
+					return eventsForSingleDay;
+				}
+			}
+		}
+
+		return null;
 	}
 
 	private static String hashSha256(String toHash)
