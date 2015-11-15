@@ -33,7 +33,9 @@
                             'series-1': {lineSmooth: Chartist.Interpolation.step()}
                         });
 
-                jQuery('.pickadate').pickadate();
+                jQuery('.pickadate').pickadate({
+                    formatSubmit: 'yyyy/mm/dd'
+                });
             </script>
         </div>
     </div>
