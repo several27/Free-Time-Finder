@@ -236,11 +236,14 @@ public class Main
 		{
 			Map.Entry<Long, Integer> event = eventsForSingleDay.firstEntry();
 
-			Date eventDate = new Date(event.getKey());
-			System.out.println(date.toString() + " -- " + eventDate.toString());
-			if (eventDate.getYear() == date.getYear() && eventDate.getMonth() == date.getMonth() && eventDate.getDate() == date.getDate())
+			if (event != null)
 			{
-				return eventsForSingleDay;
+				Date eventDate = new Date(event.getKey());
+				System.out.println(date.toString() + " -- " + eventDate.toString());
+				if (eventDate.getYear() == date.getYear() && eventDate.getMonth() == date.getMonth() && eventDate.getDate() == date.getDate())
+				{
+					return eventsForSingleDay;
+				}
 			}
 		}
 
