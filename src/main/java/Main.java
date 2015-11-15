@@ -80,11 +80,10 @@ public class Main
 
 				Statement stmt = connection.createStatement();
 				stmt.executeUpdate("CREATE TABLE IF NOT EXISTS societies (" +
-				                   "ID int NOT NULL AUTO_INCREMENT," +
+				                   "ID int NOT NULL SERIAL PRIMARY KEY," +
 				                   "name varchar(255) NOT NULL," +
 				                   "email varchar(255) NOT NULL," +
-				                   "password text NOT NULL," +
-				                   "PRIMARY KEY (ID)" +
+				                   "password text NOT NULL" +
 				                   ")");
 
 				PreparedStatement pS = connection.prepareStatement("SELECT ID, name, email " +
