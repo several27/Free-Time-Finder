@@ -1,5 +1,7 @@
 import java.security.MessageDigest;
 import java.sql.*;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -10,6 +12,7 @@ import java.net.URISyntaxException;
 
 import static spark.Spark.*;
 
+import spark.QueryParamsMap;
 import spark.Session;
 import spark.template.freemarker.FreeMarkerEngine;
 import spark.ModelAndView;
@@ -152,8 +155,21 @@ public class Main
 			}
 			attributes.put("userName", user.getName());
 
-			String date = request.queryMap().get("date_submit").value();
+			QueryParamsMap date = request.queryMap().get("date");
+			QueryParamsMap dateSubmit = request.queryMap().get("date_submit");
+			String dateS, dateSubmitS;
 
+			try
+			{
+				dateS = date.value();
+				dateSubmitS = dateSubmit.value();
+			}
+			catch (Exception e)
+			{
+				LocalDateTime now = LocalDateTime.now();
+				dateS = now.format(DateTimeFormatter.ofPattern("yyyy/MM/DD"));
+				dateSubmitS = now.format(DateTimeFormatter.ofPattern("MMMM dd, yyyy"));
+			}
 
 			StringBuilder labels = new StringBuilder();
 			for (int i = 0; i < 24; i++)
