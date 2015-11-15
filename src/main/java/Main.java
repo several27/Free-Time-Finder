@@ -232,6 +232,7 @@ public class Main
 
 	private static TreeMap<Long, Integer> getEventsByDate(ArrayList<TreeMap<Long, Integer>> events, Date date)
 	{
+		System.out.println(events.size());
 		for (TreeMap<Long, Integer> eventsForSingleDay : events)
 		{
 			Map.Entry<Long, Integer> event = eventsForSingleDay.firstEntry();
