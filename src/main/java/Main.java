@@ -2,6 +2,7 @@ import java.security.MessageDigest;
 import java.sql.*;
 import java.util.HashMap;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Map;
 
 import java.net.URI;
@@ -16,6 +17,7 @@ import spark.ModelAndView;
 import static spark.Spark.get;
 
 import com.heroku.sdk.jdbc.DatabaseUrl;
+import spark.utils.StringUtils;
 
 public class Main
 {
@@ -150,14 +152,20 @@ public class Main
 			}
 			attributes.put("userName", user.getName());
 
-			attributes.put("script", "new Chartist.Line('#chart', {\n" +
-			                         "    labels: ['00:00', '01:00', '02:00', '03:00'],\n" +
-			                         "    series: [{name: 'series-1', data: [1, 2, 3, 4]}]\n" +
-			                         "  }, {" +
-			                         "  'series-1': {\n" +
-			                         "      lineSmooth: Chartist.Interpolation.step()\n" +
-			                         "    }," +
-			                         "});");
+			String[] labels = new String[24];
+			for (int i = 0; i < 24; i++)
+			{
+				labels[i] = (i < 10 ? "0" + i : i) + ":00";
+			}
+
+			String[] data = new String[24];
+			for (int i = 0; i < 24; i++)
+			{
+				labels[i] = Integer.toString(i);
+			}
+
+			attributes.put("labels", "\"" + String.join("\", \"", labels) + "\"");
+			attributes.put("data", String.join(", ", data));
 
 			return new ModelAndView(attributes, "findFreeTime.ftl");
 		}, new FreeMarkerEngine());
