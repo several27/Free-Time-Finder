@@ -17,7 +17,7 @@
 	        <h1>Free Time Finder</h1>
 		    <h2>For Societies</h2>
 
-	        <p></p>
+	        <#--<p></p>-->
 
 	        <#--<a type="button" class="btn btn-lg btn-default" href="/login">-->
 		        <#--<span class="glyphicon"></span> Login-->
@@ -29,9 +29,9 @@
 	</div>
 	<div class="container">
 		<div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4">
-                <form class="form-horizontal" role="form" >
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <form class="form-horizontal" role="form" method="post">
                     <div class="form-group">
                         <label class="control-label col-sm-2" for="email">Email:</label>
                         <div class="col-sm-10">
@@ -58,7 +58,7 @@
                     </div>
                 </form>
             </div>
-            <div class="col-md-4"></div>
+            <div class="col-md-3"></div>
 		</div>
 
 	    <#--<div class="alert alert-info text-center" role="alert">-->

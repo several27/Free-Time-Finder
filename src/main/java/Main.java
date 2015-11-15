@@ -71,7 +71,6 @@ public class Main
 			String email = request.queryMap().get("email").value();
 			String password = request.queryMap().get("password").value();
 
-
 			Map<String, Object> attributes = new HashMap<>();
 			Connection connection = null;
 
