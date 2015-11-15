@@ -157,7 +157,7 @@ public class Main
 
 			QueryParamsMap date = request.queryMap().get("date");
 			QueryParamsMap dateSubmit = request.queryMap().get("date_submit");
-			String dateS, dateSubmitS;
+			String dateS = "", dateSubmitS = "";
 
 			try
 			{
