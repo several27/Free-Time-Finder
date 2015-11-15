@@ -166,14 +166,14 @@ public class Main
 			}
 			else
 			{
-				dateS = new SimpleDateFormat("yyyy/MM/dd").format(new java.util.Date());
-				dateSubmitS = new SimpleDateFormat("MMMM dd, yyyy").format(new java.util.Date());
+				dateS = new SimpleDateFormat("dd MMMM, yyyy").format(new java.util.Date());
+				dateSubmitS = new SimpleDateFormat("yyyy/MM/dd").format(new java.util.Date());
 			}
 
 			dateD = new Date(
-					Integer.parseInt(dateS.substring(0, 4)),
-					Integer.parseInt(dateS.substring(5, 7)),
-					Integer.parseInt(dateS.substring(8, 10))
+					Integer.parseInt(dateSubmitS.substring(0, 4)),
+					Integer.parseInt(dateSubmitS.substring(5, 7)),
+					Integer.parseInt(dateSubmitS.substring(8, 10))
 			);
 
 			ArrayList<TreeMap<Long, Integer>> events = null;
