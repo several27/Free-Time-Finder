@@ -45,6 +45,8 @@
                 </#if>
 
 				<#if userEmail??>
+
+				<#else>
 	                <form class="form-horizontal" role="form" method="post" action="login">
 	                    <div class="form-group">
 	                        <label class="control-label col-sm-2" for="email">Email:</label>
