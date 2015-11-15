@@ -189,12 +189,13 @@ public class Main
 				eventsForDay = new TreeMap<>();
 			}
 
+			System.out.println("-----------------------------" + eventsForDay.size() + "-------------------------");
+
 			StringBuilder labels = new StringBuilder();
 			StringBuilder data = new StringBuilder();
 			try
 			{
-				Set<Map.Entry<Long, Integer>> entrySet = eventsForDay.entrySet();
-				for (Map.Entry<Long, Integer> event : entrySet)
+				for (Map.Entry<Long, Integer> event : eventsForDay.entrySet())
 				{
 					Date eventDate = new Date(event.getKey());
 					labels.append("\"");
@@ -232,7 +233,6 @@ public class Main
 
 	private static TreeMap<Long, Integer> getEventsByDate(ArrayList<TreeMap<Long, Integer>> events, Date date)
 	{
-		System.out.println(events.size());
 		for (TreeMap<Long, Integer> eventsForSingleDay : events)
 		{
 			Map.Entry<Long, Integer> event = eventsForSingleDay.firstEntry();
@@ -240,7 +240,6 @@ public class Main
 			if (event != null)
 			{
 				Date eventDate = new Date(event.getKey());
-				System.out.println(date.toString() + " -- " + eventDate.toString());
 				if (eventDate.getYear() == date.getYear() && eventDate.getMonth() == date.getMonth() && eventDate.getDate() == date.getDate())
 				{
 					return eventsForSingleDay;
