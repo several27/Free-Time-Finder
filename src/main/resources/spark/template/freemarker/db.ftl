@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <#include "header.ftl">
+	<#include "header.ftl">
 </head>
 
 <body>
 
-  <#include "nav.ftl">
+	<#include "nav.ftl">
 
-<div class="container">
+	<div class="container">
 
-  <h1>Database Output</h1>
-    <ul>
-    <#list results as x>
-      <li> ${x} </li>
-    </#list>
-    </ul>
+	    <h1>Database Output</h1>
+	    <ul>
+		<#list results as x>
+	        <li> ${x}</li>
+		</#list>
+	    </ul>
 
-</div>
+	</div>
 
 </body>
 </html>
