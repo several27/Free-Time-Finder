@@ -1,5 +1,6 @@
 import java.security.MessageDigest;
 import java.sql.*;
+import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
@@ -166,9 +167,8 @@ public class Main
 			}
 			else
 			{
-				LocalDateTime now = LocalDateTime.now();
-				dateS = now.format(DateTimeFormatter.ofPattern("yyyy/MM/DD"));
-				dateSubmitS = now.format(DateTimeFormatter.ofPattern("MMMM dd, yyyy"));
+				dateS = new SimpleDateFormat("yyyy/MM/dd").format(new java.util.Date());
+				dateSubmitS = new SimpleDateFormat("MMMM dd, yyyy").format(new java.util.Date());
 			}
 
 			StringBuilder labels = new StringBuilder();
