@@ -31,7 +31,10 @@ public class Main
 			Map<String, Object> attributes = new HashMap<>();
 
 			User user = request.session().attribute("User");
-			attributes.put("userName", user.getName());
+			if (user != null)
+			{
+				attributes.put("userName", user.getName());
+			}
 
 			return new ModelAndView(attributes, "index.ftl");
 		}, new FreeMarkerEngine());
