@@ -150,6 +150,15 @@ public class Main
 			}
 			attributes.put("userName", user.getName());
 
+			attributes.put("script", "new Chartist.Line('#chart', {\n" +
+			                         "    labels: ['00:00', '01:00', '02:00', '03:00'],\n" +
+			                         "    series: [{name: 'series-1', data: [1, 2, 3, 4]}]\n" +
+			                         "  }, {" +
+			                         "  'series-1': {\n" +
+			                         "      lineSmooth: Chartist.Interpolation.step()\n" +
+			                         "    }," +
+			                         "});");
+
 			return new ModelAndView(attributes, "findFreeTime.ftl");
 		}, new FreeMarkerEngine());
 
