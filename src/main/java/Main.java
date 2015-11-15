@@ -152,6 +152,9 @@ public class Main
 			}
 			attributes.put("userName", user.getName());
 
+			String date = request.queryMap().get("date_submit").value();
+
+
 			StringBuilder labels = new StringBuilder();
 			for (int i = 0; i < 24; i++)
 			{
@@ -172,6 +175,9 @@ public class Main
 
 			attributes.put("labels", labels.toString());
 			attributes.put("data", data.toString());
+
+			attributes.put("date", request.queryMap().get("date").value());
+			attributes.put("date_submit", request.queryMap().get("date_submit").value());
 
 			attributes.put("activeMenu", "");
 
