@@ -192,8 +192,8 @@ public class Main
 			attributes.put("labels", labels.toString());
 			attributes.put("data", data.toString());
 
-			attributes.put("date", dateS);
-			attributes.put("dateSubmit", dateSubmitS);
+			attributes.put("date",  "  asd as" );
+			attributes.put("dateSubmit", "asdsad");
 
 			attributes.put("activeMenu", "");
 
