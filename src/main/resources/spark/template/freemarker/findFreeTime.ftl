@@ -13,7 +13,7 @@
         <form class="form-inline" role="form">
             <div class="form-group">
                 <label for="year">Date:</label>
-                <input type="text" name="date" id="date" class="form-control pickadate" value="${dateSubmit}">
+                <input type="text" name="date" id="date" class="form-control pickadate" value="${date}">
             </div>
             <button type="submit" class="btn btn-default">Submit</button>
         </form>
