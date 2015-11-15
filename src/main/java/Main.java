@@ -189,8 +189,6 @@ public class Main
 				eventsForDay = new TreeMap<>();
 			}
 
-			System.out.println("-----------------------------" + eventsForDay.size() + "-------------------------");
-
 			StringBuilder labels = new StringBuilder();
 			StringBuilder data = new StringBuilder();
 			try

@@ -30,7 +30,7 @@
                             }]
                         },
                         {
-                            'series-1': {lineSmooth: Chartist.Interpolation.step()}
+                            'series-1': {lineSmooth: Chartist.Interpolation.simple()}
                         });
 
                 jQuery('.pickadate').pickadate({
