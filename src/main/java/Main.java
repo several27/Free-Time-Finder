@@ -109,16 +109,18 @@ public class Main
 				if (user != null)
 				{
 					request.session().attribute("User", user);
+					attributes.put("successMessage", user.getName() + " login correctly !");
+					attributes.put("userName", user.getName());
 				}
 				else
 				{
-					attributes.put("message", "Wrong email or password");
+					attributes.put("errorMessage", "Wrong email or password");
 				}
 
 				return new ModelAndView(attributes, "index.ftl");
 			} catch (Exception e)
 			{
-				attributes.put("message", "There was an error: " + e);
+				attributes.put("errorMessage", "There was an error: " + e);
 				return new ModelAndView(attributes, "error.ftl");
 			} finally
 			{

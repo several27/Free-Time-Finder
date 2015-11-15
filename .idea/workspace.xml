@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed76ce74-ce15-4451-96e2-85362c1181c4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Main.java" afterPath="$PROJECT_DIR$/src/main/java/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spark/template/freemarker/index.ftl" afterPath="$PROJECT_DIR$/src/main/resources/spark/template/freemarker/index.ftl" />
     </list>
@@ -31,8 +29,8 @@
       <file leaf-file-name="index.ftl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/spark/template/freemarker/index.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47808766">
-              <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.45418328">
+              <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -82,18 +80,18 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="117" column="58" selection-start-line="117" selection-start-column="58" selection-end-line="117" selection-end-column="58" />
+              <caret line="112" column="44" selection-start-line="112" selection-start-column="36" selection-end-line="112" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1297#1305#0" expanded="true" />
-                <marker date="1447588901000" expanded="true" signature="1075:1124" placeholder="CREATE TABLE..IF..." />
-                <marker date="1447588901000" expanded="true" signature="1152:1184" placeholder="INSERT INTO ticks..." />
-                <marker date="1447588901000" expanded="true" signature="1226:1248" placeholder="SELECT tick ..ticks..." />
-                <marker date="1447588901000" expanded="true" signature="2206:2244" placeholder="CREATE TABLE..IF..." />
-                <marker date="1447588901000" expanded="true" signature="2206:2440" placeholder="CREATE TABLE..IF..." />
-                <marker date="1447588901000" expanded="true" signature="2206:2441" placeholder="CREATE TABLE..IF..." />
-                <marker date="1447588901000" expanded="true" signature="2473:2694" placeholder="INSERT INTO societies..." />
-                <marker date="1447588901000" expanded="true" signature="2755:2945" placeholder="SELECT ID, n..societies..." />
+                <marker date="1447589236000" expanded="true" signature="1075:1124" placeholder="CREATE TABLE..IF..." />
+                <marker date="1447589236000" expanded="true" signature="1152:1184" placeholder="INSERT INTO ticks..." />
+                <marker date="1447589236000" expanded="true" signature="1226:1248" placeholder="SELECT tick ..ticks..." />
+                <marker date="1447589236000" expanded="true" signature="2206:2244" placeholder="CREATE TABLE..IF..." />
+                <marker date="1447589236000" expanded="true" signature="2206:2440" placeholder="CREATE TABLE..IF..." />
+                <marker date="1447589236000" expanded="true" signature="2206:2441" placeholder="CREATE TABLE..IF..." />
+                <marker date="1447589236000" expanded="true" signature="2473:2694" placeholder="INSERT INTO societies..." />
+                <marker date="1447589236000" expanded="true" signature="2755:2945" placeholder="SELECT ID, n..societies..." />
               </folding>
             </state>
           </provider>
@@ -175,8 +173,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/public/stylesheets/main.css" />
         <option value="$PROJECT_DIR$/src/main/resources/spark/template/freemarker/nav.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spark/template/freemarker/index.ftl" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
       </list>
     </option>
   </component>
@@ -759,7 +757,7 @@
       <created>1447582837088</created>
       <option name="number" value="Default" />
       <updated>1447582837088</updated>
-      <workItem from="1447582838631" duration="5722000" />
+      <workItem from="1447582838631" duration="5918000" />
     </task>
     <task id="LOCAL-00001" summary="First change">
       <created>1447584200085</created>
@@ -771,7 +769,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5722000" />
+    <option name="totallyTimeSpent" value="5918000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1391" height="877" extended-state="6" />
@@ -940,26 +938,26 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="117" column="58" selection-start-line="117" selection-start-column="58" selection-end-line="117" selection-end-column="58" />
+          <caret line="112" column="44" selection-start-line="112" selection-start-column="36" selection-end-line="112" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1297#1305#0" expanded="true" />
-            <marker date="1447588901000" expanded="true" signature="1075:1124" placeholder="CREATE TABLE..IF..." />
-            <marker date="1447588901000" expanded="true" signature="1152:1184" placeholder="INSERT INTO ticks..." />
-            <marker date="1447588901000" expanded="true" signature="1226:1248" placeholder="SELECT tick ..ticks..." />
-            <marker date="1447588901000" expanded="true" signature="2206:2244" placeholder="CREATE TABLE..IF..." />
-            <marker date="1447588901000" expanded="true" signature="2206:2440" placeholder="CREATE TABLE..IF..." />
-            <marker date="1447588901000" expanded="true" signature="2206:2441" placeholder="CREATE TABLE..IF..." />
-            <marker date="1447588901000" expanded="true" signature="2473:2694" placeholder="INSERT INTO societies..." />
-            <marker date="1447588901000" expanded="true" signature="2755:2945" placeholder="SELECT ID, n..societies..." />
+            <marker date="1447589236000" expanded="true" signature="1075:1124" placeholder="CREATE TABLE..IF..." />
+            <marker date="1447589236000" expanded="true" signature="1152:1184" placeholder="INSERT INTO ticks..." />
+            <marker date="1447589236000" expanded="true" signature="1226:1248" placeholder="SELECT tick ..ticks..." />
+            <marker date="1447589236000" expanded="true" signature="2206:2244" placeholder="CREATE TABLE..IF..." />
+            <marker date="1447589236000" expanded="true" signature="2206:2440" placeholder="CREATE TABLE..IF..." />
+            <marker date="1447589236000" expanded="true" signature="2206:2441" placeholder="CREATE TABLE..IF..." />
+            <marker date="1447589236000" expanded="true" signature="2473:2694" placeholder="INSERT INTO societies..." />
+            <marker date="1447589236000" expanded="true" signature="2755:2945" placeholder="SELECT ID, n..societies..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/spark/template/freemarker/index.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47808766">
-          <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.45418328">
+          <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
           <folding />
         </state>
       </provider>

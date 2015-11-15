@@ -32,38 +32,46 @@
             <div class="col-md-3"></div>
             <div class="col-md-6">
 
-                <#if message??>
+                <#if errorMessage??>
 	                <div class="alert alert-danger text-center" role="alert">
-	                    ${message}
+	                    ${errorMessage}
 	                </div>
                 </#if>
 
-                <form class="form-horizontal" role="form" method="post" action="login">
-                    <div class="form-group">
-                        <label class="control-label col-sm-2" for="email">Email:</label>
-                        <div class="col-sm-10">
-                            <input type="email" name="email" class="form-control" id="email" placeholder="Enter email">
-                        </div>
+                <#if successMessage??>
+                    <div class="alert alert-success text-center" role="alert">
+	                ${successMessage}
                     </div>
-                    <div class="form-group">
-                        <label class="control-label col-sm-2" for="pwd">Password:</label>
-                        <div class="col-sm-10">
-                            <input type="password" name="password" class="form-control" id="password" placeholder="Enter password">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10">
-                            <div class="checkbox">
-                                <label><input type="checkbox"> Remember me</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10">
-                            <button type="submit" class="btn btn-default">Submit</button>
-                        </div>
-                    </div>
-                </form>
+                </#if>
+
+				<#if userEmail??>
+	                <form class="form-horizontal" role="form" method="post" action="login">
+	                    <div class="form-group">
+	                        <label class="control-label col-sm-2" for="email">Email:</label>
+	                        <div class="col-sm-10">
+	                            <input type="email" name="email" class="form-control" id="email" placeholder="Enter email">
+	                        </div>
+	                    </div>
+	                    <div class="form-group">
+	                        <label class="control-label col-sm-2" for="pwd">Password:</label>
+	                        <div class="col-sm-10">
+	                            <input type="password" name="password" class="form-control" id="password" placeholder="Enter password">
+	                        </div>
+	                    </div>
+	                    <div class="form-group">
+	                        <div class="col-sm-offset-2 col-sm-10">
+	                            <div class="checkbox">
+	                                <label><input type="checkbox"> Remember me</label>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="form-group">
+	                        <div class="col-sm-offset-2 col-sm-10">
+	                            <button type="submit" class="btn btn-default">Submit</button>
+	                        </div>
+	                    </div>
+	                </form>
+				</#if>
             </div>
             <div class="col-md-3"></div>
 		</div>
