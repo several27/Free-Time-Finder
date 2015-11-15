@@ -192,8 +192,8 @@ public class Main
 			attributes.put("labels", labels.toString());
 			attributes.put("data", data.toString());
 
-			attributes.put("date", request.queryMap().get("date").value());
-			attributes.put("date_submit", request.queryMap().get("date_submit").value());
+			attributes.put("date", dateS);
+			attributes.put("dateSubmit", dateSubmitS);
 
 			attributes.put("activeMenu", "");
 
