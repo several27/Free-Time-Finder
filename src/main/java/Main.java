@@ -237,7 +237,7 @@ public class Main
 			for (Map.Entry<Long, Integer> event : eventsForSingleDay.entrySet())
 			{
 				Date eventDate = new Date(event.getKey());
-				System.out.println(eventDate);
+				System.out.println(date.toString() + " -- " + eventDate.toString());
 				if (eventDate.getYear() == date.getYear() && eventDate.getMonth() == date.getMonth() && eventDate.getDate() == date.getDate())
 				{
 					return eventsForSingleDay;
