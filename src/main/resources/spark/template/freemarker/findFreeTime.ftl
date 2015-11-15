@@ -36,7 +36,7 @@
 			                axisY: {
                                 labelInterpolationFnc: function (value)
                                 {
-                                    return Math.floor(value);
+                                    return value == Math.floor(value) ? value : "";
                                 }
 			                }
 		                });
