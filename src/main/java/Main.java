@@ -67,11 +67,56 @@ public class Main
 			}
 		}, new FreeMarkerEngine());
 
-		get("/login", (request, response) -> {
-			Map<String, Object> attributes = new HashMap<>();
-			attributes.put("message", "Hello World!");
+		post("/login", (request, response) -> {
+			String email = request.queryMap().get("email").value();
+			String password = request.queryMap().get("password").value();
 
-			return new ModelAndView(attributes, "index.ftl");
+
+			Map<String, Object> attributes = new HashMap<>();
+			Connection connection = null;
+
+			try
+			{
+				connection = DatabaseUrl.extract().getConnection();
+
+				Statement stmt = connection.createStatement();
+				stmt.executeUpdate("CREATE TABLE IF NOT EXISTS societies (" +
+				                   "ID int NOT NULL AUTO_INCREMENT," +
+				                   "name varchar(255) NOT NULL," +
+				                   "email varchar(255) NOT NULL," +
+				                   "password text NOT NULL," +
+				                   "PRIMARY KEY (ID)" +
+				                   ")");
+
+				PreparedStatement pS = connection.prepareStatement("SELECT ID, name, email " +
+				                                                   "FROM societies " +
+				                                                   "WHERE email = ? AND password = ?");
+				pS.setString(1, email);
+				pS.setString(2, password);
+
+				ResultSet rs = pS.executeQuery();
+
+				ArrayList<String> output = new ArrayList<>();
+				while (rs.next())
+				{
+					output.add("Read from DB: " + rs.getInt("ID") + " " + rs.getString("email"));
+				}
+
+				attributes.put("results", output);
+				return new ModelAndView(attributes, "db.ftl");
+			} catch (Exception e)
+			{
+				attributes.put("message", "There was an error: " + e);
+				return new ModelAndView(attributes, "error.ftl");
+			} finally
+			{
+				if (connection != null) try
+				{
+					connection.close();
+				} catch (SQLException e)
+				{
+				}
+			}
 		}, new FreeMarkerEngine());
 
 //		get("/signup", (request, response) -> {
