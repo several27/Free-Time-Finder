@@ -184,6 +184,10 @@ public class Main
 			} catch(Exception e) {}
 
 			TreeMap<Long, Integer> eventsForDay = getEventsByDate(events, dateD);
+			if (eventsForDay != null)
+			{
+				eventsForDay = new TreeMap<>();
+			}
 
 			StringBuilder labels = new StringBuilder();
 			StringBuilder data = new StringBuilder();
