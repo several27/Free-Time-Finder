@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3e9befe-9efa-471e-9b56-a88594f66f2e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__backport_util_concurrent_backport_util_concurrent_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mnode_ical4j_ical4j_1_0_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/helloworld.iml" afterPath="$PROJECT_DIR$/helloworld.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/DataParser/Days.java" afterPath="$PROJECT_DIR$/src/main/java/DataParser/Days.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/DataParser/Main.java" afterPath="$PROJECT_DIR$/src/main/java/DataParser/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/DataParser/TimeArray.java" afterPath="$PROJECT_DIR$/src/main/java/DataParser/TimeArray.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Main.java" afterPath="$PROJECT_DIR$/src/main/java/Main.java" />
     </list>
     <ignored path="java-getting-started.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,18 +56,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5846154">
+              <caret line="101" column="72" selection-start-line="101" selection-start-column="72" selection-end-line="101" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1447614608000" expanded="true" signature="1299:1348" placeholder="CREATE TABLE..IF..." />
-                <marker date="1447614608000" expanded="true" signature="1376:1408" placeholder="INSERT INTO ticks..." />
-                <marker date="1447614608000" expanded="true" signature="1450:1472" placeholder="SELECT tick ..ticks..." />
-                <marker date="1447614608000" expanded="true" signature="2430:2664" placeholder="CREATE TABLE..IF..." />
-                <marker date="1447614608000" expanded="true" signature="2979:3169" placeholder="SELECT ID, n..societies..." />
+                <marker date="1447858555000" expanded="true" signature="1299:1348" placeholder="CREATE TABLE..IF..." />
+                <marker date="1447858555000" expanded="true" signature="1376:1408" placeholder="INSERT INTO ticks..." />
+                <marker date="1447858555000" expanded="true" signature="1450:1472" placeholder="SELECT tick ..ticks..." />
+                <marker date="1447858555000" expanded="true" signature="2430:2664" placeholder="CREATE TABLE..IF..." />
+                <marker date="1447858555000" expanded="true" signature="2695:2907" placeholder="INSERT INTO societies..." />
+                <marker date="1447858555000" expanded="true" signature="2968:3158" placeholder="SELECT ID, n..societies..." />
               </folding>
             </state>
           </provider>
@@ -104,10 +96,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TimeArray.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TimeArray.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/DataParser/TimeArray.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.23846154">
+            <state vertical-scroll-proportion="0.0">
               <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -147,6 +139,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/DataParser/TimeArray.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
       </list>
     </option>
   </component>
@@ -730,12 +723,12 @@
       <workItem from="1447598136134" duration="141000" />
       <workItem from="1447598327170" duration="91000" />
       <workItem from="1447598431549" duration="134000" />
-      <workItem from="1447858256016" duration="109000" />
+      <workItem from="1447858256016" duration="301000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="475000" />
+    <option name="totallyTimeSpent" value="667000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1389" height="877" extended-state="6" />
@@ -807,11 +800,12 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1447614608000" expanded="true" signature="1299:1348" placeholder="CREATE TABLE..IF..." />
-            <marker date="1447614608000" expanded="true" signature="1376:1408" placeholder="INSERT INTO ticks..." />
-            <marker date="1447614608000" expanded="true" signature="1450:1472" placeholder="SELECT tick ..ticks..." />
-            <marker date="1447614608000" expanded="true" signature="2430:2664" placeholder="CREATE TABLE..IF..." />
-            <marker date="1447614608000" expanded="true" signature="2979:3169" placeholder="SELECT ID, n..societies..." />
+            <marker date="1447858555000" expanded="true" signature="1299:1348" placeholder="CREATE TABLE..IF..." />
+            <marker date="1447858555000" expanded="true" signature="1376:1408" placeholder="INSERT INTO ticks..." />
+            <marker date="1447858555000" expanded="true" signature="1450:1472" placeholder="SELECT tick ..ticks..." />
+            <marker date="1447858555000" expanded="true" signature="2430:2664" placeholder="CREATE TABLE..IF..." />
+            <marker date="1447858555000" expanded="true" signature="2695:2907" placeholder="INSERT INTO societies..." />
+            <marker date="1447858555000" expanded="true" signature="2968:3158" placeholder="SELECT ID, n..societies..." />
           </folding>
         </state>
       </provider>
@@ -861,11 +855,12 @@
           <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1447614608000" expanded="true" signature="1299:1348" placeholder="CREATE TABLE..IF..." />
-            <marker date="1447614608000" expanded="true" signature="1376:1408" placeholder="INSERT INTO ticks..." />
-            <marker date="1447614608000" expanded="true" signature="1450:1472" placeholder="SELECT tick ..ticks..." />
-            <marker date="1447614608000" expanded="true" signature="2430:2664" placeholder="CREATE TABLE..IF..." />
-            <marker date="1447614608000" expanded="true" signature="2979:3169" placeholder="SELECT ID, n..societies..." />
+            <marker date="1447858555000" expanded="true" signature="1299:1348" placeholder="CREATE TABLE..IF..." />
+            <marker date="1447858555000" expanded="true" signature="1376:1408" placeholder="INSERT INTO ticks..." />
+            <marker date="1447858555000" expanded="true" signature="1450:1472" placeholder="SELECT tick ..ticks..." />
+            <marker date="1447858555000" expanded="true" signature="2430:2664" placeholder="CREATE TABLE..IF..." />
+            <marker date="1447858555000" expanded="true" signature="2695:2907" placeholder="INSERT INTO societies..." />
+            <marker date="1447858555000" expanded="true" signature="2968:3158" placeholder="SELECT ID, n..societies..." />
           </folding>
         </state>
       </provider>
@@ -884,11 +879,12 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1447614608000" expanded="true" signature="1299:1348" placeholder="CREATE TABLE..IF..." />
-            <marker date="1447614608000" expanded="true" signature="1376:1408" placeholder="INSERT INTO ticks..." />
-            <marker date="1447614608000" expanded="true" signature="1450:1472" placeholder="SELECT tick ..ticks..." />
-            <marker date="1447614608000" expanded="true" signature="2430:2664" placeholder="CREATE TABLE..IF..." />
-            <marker date="1447614608000" expanded="true" signature="2979:3169" placeholder="SELECT ID, n..societies..." />
+            <marker date="1447858555000" expanded="true" signature="1299:1348" placeholder="CREATE TABLE..IF..." />
+            <marker date="1447858555000" expanded="true" signature="1376:1408" placeholder="INSERT INTO ticks..." />
+            <marker date="1447858555000" expanded="true" signature="1450:1472" placeholder="SELECT tick ..ticks..." />
+            <marker date="1447858555000" expanded="true" signature="2430:2664" placeholder="CREATE TABLE..IF..." />
+            <marker date="1447858555000" expanded="true" signature="2695:2907" placeholder="INSERT INTO societies..." />
+            <marker date="1447858555000" expanded="true" signature="2968:3158" placeholder="SELECT ID, n..societies..." />
           </folding>
         </state>
       </provider>
@@ -924,21 +920,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1447614608000" expanded="true" signature="1299:1348" placeholder="CREATE TABLE..IF..." />
-            <marker date="1447614608000" expanded="true" signature="1376:1408" placeholder="INSERT INTO ticks..." />
-            <marker date="1447614608000" expanded="true" signature="1450:1472" placeholder="SELECT tick ..ticks..." />
-            <marker date="1447614608000" expanded="true" signature="2430:2664" placeholder="CREATE TABLE..IF..." />
-            <marker date="1447614608000" expanded="true" signature="2979:3169" placeholder="SELECT ID, n..societies..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/DataParser/Days.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -967,10 +948,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/DataParser/TimeArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23846154">
+        <state vertical-scroll-proportion="0.0">
           <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5846154">
+          <caret line="101" column="72" selection-start-line="101" selection-start-column="72" selection-end-line="101" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1447858555000" expanded="true" signature="1299:1348" placeholder="CREATE TABLE..IF..." />
+            <marker date="1447858555000" expanded="true" signature="1376:1408" placeholder="INSERT INTO ticks..." />
+            <marker date="1447858555000" expanded="true" signature="1450:1472" placeholder="SELECT tick ..ticks..." />
+            <marker date="1447858555000" expanded="true" signature="2430:2664" placeholder="CREATE TABLE..IF..." />
+            <marker date="1447858555000" expanded="true" signature="2695:2907" placeholder="INSERT INTO societies..." />
+            <marker date="1447858555000" expanded="true" signature="2968:3158" placeholder="SELECT ID, n..societies..." />
           </folding>
         </state>
       </provider>
