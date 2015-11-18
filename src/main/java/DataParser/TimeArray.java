@@ -38,16 +38,19 @@ public class TimeArray {
 		{
 			Long time = entry.getKey();
 			Integer sum = entry.getValue();
-			/*if(timeBlocks.containsKey(time)){
+			if(timeBlocks.containsKey(time)){
 				Integer newSum = timeBlocks.get(time) + sum;
 	    		timeBlocks.put(time, newSum);
-	    	} else {*/
-			//Entry<Long, Integer> blockEntry = timeBlocks.lowerEntry(time);
-			if (timeBlocks.isEmpty()){
-				timeBlocks.put(time, sum);
-			} else {
-				Integer newSum = timeBlocks.lowerEntry(time).getValue() + sum;
-	    		timeBlocks.put(time, newSum);
+	    	} else
+			{
+				if (timeBlocks.isEmpty())
+				{
+					timeBlocks.put(time, sum);
+				} else
+				{
+					Integer newSum = timeBlocks.lowerEntry(time).getValue() + sum;
+					timeBlocks.put(time, newSum);
+				}
 			}
 	    	//}
 			
@@ -68,7 +71,7 @@ public class TimeArray {
 			}*/
 		}
 		return timeBlocks;	
-	}
+		}
 	
 	
 }

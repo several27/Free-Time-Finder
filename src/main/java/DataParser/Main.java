@@ -20,7 +20,6 @@ public class Main
 	public ArrayList<TreeMap<Long, Integer>> start() throws Exception
 	{
 		InputStream fin = new URL("http://id.southampton.ac.uk/dataset/events-diary/latest.ics").openStream();
-		// maciej is sleeping! - Partying too hard today
 		CalendarBuilder builder = new CalendarBuilder();
 		Calendar calendar = builder.build(fin);
 		
@@ -54,6 +53,7 @@ public class Main
 				System.out.println("INVALID DATE" + event.toString());
 			}
 		}
+		
 		// prints all events in date format
 		/*
 		for (Event _event: events){
@@ -62,6 +62,7 @@ public class Main
 		}
 		*/
 //___________________________________________________________________________________________*****
+		
 		//Days days = new Days();
 		TimeArray timeMap = new TimeArray();
 		//all event start and end times stored in an ordered Map (time, (start/end)
@@ -71,22 +72,8 @@ public class Main
 		
 		//adds all times from TimeArray to TimeBlock
 		TreeMap<Long, Integer> _daMap = timeMap.toBlock();
-		
-		//printing event number time blocks
-		/*
-		Iterator<Long> it = _daMap.keySet().iterator();
-		while(it.hasNext()){
-			Long block = (Long) it.next();
-			System.out.print("Time Value: " + new Time(block).toString().substring(0, 5));	
-			System.out.println("   Events : " + _daMap.get(block));
-		}
 		System.out.println("ALL EVENTS ADDED");
-		*/
 		Days ALL_DAYS = new Days(_daMap);
-		//ALL_DAYS.printDays();
-		//split timeBlocks into days of timeBlocks
-//		System.out.println("think im done");
-		
 		return ALL_DAYS.dayARRAY;
 		
 	}
@@ -95,14 +82,7 @@ public class Main
 	{
 		public int compare(Event _firstEvent, Event _secondEvent)
 		{
-			//return _firstEvent.getDateStart().compareTo(_secondEvent.getDateStart());
-			/*int compareDateStart = _firstEvent.getDateStart().compareTo(_secondEvent.getDateStart());
-			if (compareDateStart == 0)
-			{
-				return _firstEvent.getDateEnd().compareTo(_secondEvent.getDateEnd());
-			}
-			return compareDateStart;
-			*/
+			
 			int compareDateStart = _firstEvent.getDateStart().compareTo(_secondEvent.getDateStart());
 			int compareDateEnd = _firstEvent.getDateEnd().compareTo(_secondEvent.getDateEnd());
 			if (compareDateStart == 0)
