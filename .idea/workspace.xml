@@ -59,16 +59,16 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5846154">
-              <caret line="101" column="72" selection-start-line="101" selection-start-column="72" selection-end-line="101" selection-end-column="72" />
+            <state vertical-scroll-proportion="0.26153848">
+              <caret line="101" column="68" selection-start-line="101" selection-start-column="68" selection-end-line="101" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1447858555000" expanded="true" signature="1299:1348" placeholder="CREATE TABLE..IF..." />
-                <marker date="1447858555000" expanded="true" signature="1376:1408" placeholder="INSERT INTO ticks..." />
-                <marker date="1447858555000" expanded="true" signature="1450:1472" placeholder="SELECT tick ..ticks..." />
-                <marker date="1447858555000" expanded="true" signature="2430:2664" placeholder="CREATE TABLE..IF..." />
-                <marker date="1447858555000" expanded="true" signature="2695:2907" placeholder="INSERT INTO societies..." />
-                <marker date="1447858555000" expanded="true" signature="2968:3158" placeholder="SELECT ID, n..societies..." />
+                <marker date="1447858618000" expanded="true" signature="1299:1348" placeholder="CREATE TABLE..IF..." />
+                <marker date="1447858618000" expanded="true" signature="1376:1408" placeholder="INSERT INTO ticks..." />
+                <marker date="1447858618000" expanded="true" signature="1450:1472" placeholder="SELECT tick ..ticks..." />
+                <marker date="1447858618000" expanded="true" signature="2430:2664" placeholder="CREATE TABLE..IF..." />
+                <marker date="1447858618000" expanded="true" signature="2695:2909" placeholder="INSERT INTO societies..." />
+                <marker date="1447858618000" expanded="true" signature="2970:3160" placeholder="SELECT ID, n..societies..." />
               </folding>
             </state>
           </provider>
@@ -723,12 +723,12 @@
       <workItem from="1447598136134" duration="141000" />
       <workItem from="1447598327170" duration="91000" />
       <workItem from="1447598431549" duration="134000" />
-      <workItem from="1447858256016" duration="301000" />
+      <workItem from="1447858256016" duration="363000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="667000" />
+    <option name="totallyTimeSpent" value="729000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1389" height="877" extended-state="6" />
@@ -800,12 +800,12 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1447858555000" expanded="true" signature="1299:1348" placeholder="CREATE TABLE..IF..." />
-            <marker date="1447858555000" expanded="true" signature="1376:1408" placeholder="INSERT INTO ticks..." />
-            <marker date="1447858555000" expanded="true" signature="1450:1472" placeholder="SELECT tick ..ticks..." />
-            <marker date="1447858555000" expanded="true" signature="2430:2664" placeholder="CREATE TABLE..IF..." />
-            <marker date="1447858555000" expanded="true" signature="2695:2907" placeholder="INSERT INTO societies..." />
-            <marker date="1447858555000" expanded="true" signature="2968:3158" placeholder="SELECT ID, n..societies..." />
+            <marker date="1447858618000" expanded="true" signature="1299:1348" placeholder="CREATE TABLE..IF..." />
+            <marker date="1447858618000" expanded="true" signature="1376:1408" placeholder="INSERT INTO ticks..." />
+            <marker date="1447858618000" expanded="true" signature="1450:1472" placeholder="SELECT tick ..ticks..." />
+            <marker date="1447858618000" expanded="true" signature="2430:2664" placeholder="CREATE TABLE..IF..." />
+            <marker date="1447858618000" expanded="true" signature="2695:2909" placeholder="INSERT INTO societies..." />
+            <marker date="1447858618000" expanded="true" signature="2970:3160" placeholder="SELECT ID, n..societies..." />
           </folding>
         </state>
       </provider>
@@ -855,12 +855,12 @@
           <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1447858555000" expanded="true" signature="1299:1348" placeholder="CREATE TABLE..IF..." />
-            <marker date="1447858555000" expanded="true" signature="1376:1408" placeholder="INSERT INTO ticks..." />
-            <marker date="1447858555000" expanded="true" signature="1450:1472" placeholder="SELECT tick ..ticks..." />
-            <marker date="1447858555000" expanded="true" signature="2430:2664" placeholder="CREATE TABLE..IF..." />
-            <marker date="1447858555000" expanded="true" signature="2695:2907" placeholder="INSERT INTO societies..." />
-            <marker date="1447858555000" expanded="true" signature="2968:3158" placeholder="SELECT ID, n..societies..." />
+            <marker date="1447858618000" expanded="true" signature="1299:1348" placeholder="CREATE TABLE..IF..." />
+            <marker date="1447858618000" expanded="true" signature="1376:1408" placeholder="INSERT INTO ticks..." />
+            <marker date="1447858618000" expanded="true" signature="1450:1472" placeholder="SELECT tick ..ticks..." />
+            <marker date="1447858618000" expanded="true" signature="2430:2664" placeholder="CREATE TABLE..IF..." />
+            <marker date="1447858618000" expanded="true" signature="2695:2909" placeholder="INSERT INTO societies..." />
+            <marker date="1447858618000" expanded="true" signature="2970:3160" placeholder="SELECT ID, n..societies..." />
           </folding>
         </state>
       </provider>
@@ -879,12 +879,12 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1447858555000" expanded="true" signature="1299:1348" placeholder="CREATE TABLE..IF..." />
-            <marker date="1447858555000" expanded="true" signature="1376:1408" placeholder="INSERT INTO ticks..." />
-            <marker date="1447858555000" expanded="true" signature="1450:1472" placeholder="SELECT tick ..ticks..." />
-            <marker date="1447858555000" expanded="true" signature="2430:2664" placeholder="CREATE TABLE..IF..." />
-            <marker date="1447858555000" expanded="true" signature="2695:2907" placeholder="INSERT INTO societies..." />
-            <marker date="1447858555000" expanded="true" signature="2968:3158" placeholder="SELECT ID, n..societies..." />
+            <marker date="1447858618000" expanded="true" signature="1299:1348" placeholder="CREATE TABLE..IF..." />
+            <marker date="1447858618000" expanded="true" signature="1376:1408" placeholder="INSERT INTO ticks..." />
+            <marker date="1447858618000" expanded="true" signature="1450:1472" placeholder="SELECT tick ..ticks..." />
+            <marker date="1447858618000" expanded="true" signature="2430:2664" placeholder="CREATE TABLE..IF..." />
+            <marker date="1447858618000" expanded="true" signature="2695:2909" placeholder="INSERT INTO societies..." />
+            <marker date="1447858618000" expanded="true" signature="2970:3160" placeholder="SELECT ID, n..societies..." />
           </folding>
         </state>
       </provider>
@@ -958,16 +958,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5846154">
-          <caret line="101" column="72" selection-start-line="101" selection-start-column="72" selection-end-line="101" selection-end-column="72" />
+        <state vertical-scroll-proportion="0.26153848">
+          <caret line="101" column="68" selection-start-line="101" selection-start-column="68" selection-end-line="101" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1447858555000" expanded="true" signature="1299:1348" placeholder="CREATE TABLE..IF..." />
-            <marker date="1447858555000" expanded="true" signature="1376:1408" placeholder="INSERT INTO ticks..." />
-            <marker date="1447858555000" expanded="true" signature="1450:1472" placeholder="SELECT tick ..ticks..." />
-            <marker date="1447858555000" expanded="true" signature="2430:2664" placeholder="CREATE TABLE..IF..." />
-            <marker date="1447858555000" expanded="true" signature="2695:2907" placeholder="INSERT INTO societies..." />
-            <marker date="1447858555000" expanded="true" signature="2968:3158" placeholder="SELECT ID, n..societies..." />
+            <marker date="1447858618000" expanded="true" signature="1299:1348" placeholder="CREATE TABLE..IF..." />
+            <marker date="1447858618000" expanded="true" signature="1376:1408" placeholder="INSERT INTO ticks..." />
+            <marker date="1447858618000" expanded="true" signature="1450:1472" placeholder="SELECT tick ..ticks..." />
+            <marker date="1447858618000" expanded="true" signature="2430:2664" placeholder="CREATE TABLE..IF..." />
+            <marker date="1447858618000" expanded="true" signature="2695:2909" placeholder="INSERT INTO societies..." />
+            <marker date="1447858618000" expanded="true" signature="2970:3160" placeholder="SELECT ID, n..societies..." />
           </folding>
         </state>
       </provider>
